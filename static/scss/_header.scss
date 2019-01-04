@@ -1,0 +1,16 @@
+header {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 20px 0px #d5d5d5;
+
+    .header-main {
+        @extend .container;
+
+        @include flex($horizontal: space-between);
+
+        padding-bottom: 23px;
+        padding-top: 23px;
+    }
+
+    @include media-breakpoint-up (md){
+    }
+}

@@ -1,0 +1,43 @@
+// * {
+//     outline: 1px solid brown;
+// }
+
+body {
+    @include font(14px);
+
+    background-color: #e9e9e9;
+    color: $font-color;
+}
+
+ol,
+ul,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    @extend
+        .btn,
+        .font-weight-bold;
+
+    @include font(14px, 400);
+
+    border-radius: 23px;
+}
+
+.section-spacing {
+    @extend .container-fluid;
+
+    margin-bottom: 65px;
+    margin-top: 20px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 0;
+    }
+}
